@@ -162,6 +162,16 @@ img {
     background-color: #2E2F42;
     padding-top: 188px;
     padding-bottom: 188px;
+   
+    background-image:
+    linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), 
+    url(../images/Hero/people-office.jpg);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    
 }
 
 .hero-title {
