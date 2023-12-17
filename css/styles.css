@@ -71,6 +71,14 @@ h3 {
     letter-spacing: 0.4px;
 }
 
+h4 {
+    color: #FFF;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+}
+
 p {
     color: #434455;
     font-size: 16px;
@@ -156,6 +164,19 @@ img {
 .address-link:hover,
 .address-link:focus {
     color: #404bbf;
+}
+
+.header-link.active {
+    color: #404bbf;
+}
+
+.header-link.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404BBF;
 }
 
 .hero-section {
@@ -326,24 +347,39 @@ img {
     margin-bottom: 8px;
 }
 
-.team-icon-container {
+.team-icon-list {
     display: flex;
     gap: 24px;
     justify-content: center;
+    align-items: center;
 }
 
 .team-icon-wrap {
     width: 40px;
     height: 40px;
-    background-color: #4D5AE5;
-    border-radius: 50%;
-    padding: 12px;
+    
 }
 
-.team-icon {
-    width: 12px;
-    height: 12px;
-    fill: #F4F4FD;
+.team-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #F4F4FD;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+}
+
+.team-icon-link:hover,
+.team-icon-link:focus {
+    background-color: #404BBF;
+}
+
+.social-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
 }
 
 .portfolio-list {
@@ -403,7 +439,11 @@ img {
     background-color: #2E2F42;
     padding-top: 100px;
     padding-bottom: 100px;
-    border-bottom: ;
+}
+
+.footer {
+    display: flex;
+    gap: 120px;
 }
 
 .footer-logo {
@@ -430,4 +470,14 @@ img {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
+}
+
+
+
+.footer-icon-list {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
 }
